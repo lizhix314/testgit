@@ -1,0 +1,281 @@
+﻿/* ============================================================================================== 
+This copyright notice must be kept untouched in the stylesheet at all times.
+The original version of this stylesheet and the associated (x)html 
+is available at http://www.script-tutorials.com/bootstrap-one-page-template-with-parallax-effect/
+Copyright (c) Script Tutorials. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any way to fit your requirements.
+================================================================================================= */
+@import url('font-awesome.min.css');
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'microsoft yahei',Arial,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+font-family: 'microsoft yahei',Arial,sans-serif;
+}
+
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+  width: 100%;
+}
+#reset{
+    min-height: 56px;
+}
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color:#FFF;
+}
+
+.text-vcenter h3 {
+  color:#FFF;
+}
+.navbar{
+    min-height: 67px;
+}
+
+/* additional sections */
+#home{
+    background: url(../images/top_pic_01.jpg)  top center ;
+}
+#road {
+    background: url(../images/top_pic_02.jpg) top center ;
+}
+#product{
+    background: #000 url(../images/top_pic_03.jpg) no-repeat top center ;
+}
+#team{
+    background: url(../images/top_pic_04.jpg) no-repeat top center ;
+}
+#team,#product,#road,#home{
+    padding-top: 25%;padding-bottom: 25%;
+}
+#pro_01{
+    background: url(../images/pro_ban_02.png) no-repeat center top ;
+}
+#pro_02{
+    background: url(../images/pro_ban_03.png) no-repeat center top;
+}
+#ad_banner{
+    background: url(../images/team_banner.png) no-repeat center top ;
+}
+#ad_banner_news{
+    background: url(../images/news_banner.png) no-repeat center top ;
+}
+#ad_banner_content_us{
+    background: url(../images/content_banner.png) no-repeat center top ;
+}
+#ad_banner_pro{
+    background: url(../images/pro_wai.jpg) no-repeat center top ;padding-bottom:30%;padding-top: 30%;
+}
+#home,
+#pro_01,
+#ad_banner,
+#ad_banner_news,
+#ad_banner_content_us,
+#pro_02,
+#ad_banner_pro,
+#product,
+#road,
+#team
+{
+    /*background-size: 100%  auto;*/
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background-size: 100% auto;*/
+}
+/*#home{height: 400px;}*/
+/*#road{ height: 420px;}*/
+#pro_01{padding-bottom: 50%}
+#pro_02{padding-bottom: 60%}
+#ad_banner{height: 399px;}
+#ad_banner_news{height: 334px;}
+#ad_banner_content_us{height: 397px;}
+
+
+#home .container .text-left,
+#product .container .text-left,
+#team .container .text-left,
+#road .container .text-left
+{
+    background: url(../images/text_bg.png) no-repeat;
+    background-size: 100% auto;
+    width: 60%;
+}
+#home .container .text-left h1,
+#ad_banner_pro .container .text-left h1,
+#product .container .text-left h1,
+#team .container .text-left h1,
+#road .container .text-left h1
+{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 3vw;
+}
+/*@media (max-width: 768px) {*/
+    /*#home .container .text-left h1,*/
+    /*#product .container .text-left h1,*/
+    /*#team .container .text-left h1,*/
+    /*#road .container .text-left h1*/
+    /*{*/
+        /*font-size: 1em;*/
+    /*}*/
+/*}*/
+#home .container .text-left h1 span,
+#product .container .text-left h1 span,
+#ad_banner_pro .container .text-left h1 span,
+#team .container .text-left h1 span,
+#road .container .text-left h1 span
+{
+    color: #32d1f2;
+}
+#pro_home{
+    margin-top: 20%;
+    margin-bottom: 8%;
+}
+
+@media (min-width: 768px) {
+    #pro_home{
+        margin-top: 160px;
+        margin-bottom: 116px;
+    }
+}
+#pro_01 h1,
+#pro_03 h1,
+#pro_about h1,
+
+#pro_home h1
+{
+    font-size: 2.5vmax;
+    letter-spacing: 0px;
+}
+#pro_03 h1{
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+#pro_home h1 span,
+#team_content h1 span,
+#pro_03 h1 span,
+#pro_about h1 span,
+#pro_01 h1 span
+{
+    color: #2ba7c1;
+    font-weight: 700;
+}
+#pro_01 p,
+#pro_about p,
+#pro_home p
+{
+    font-size: 1.5vmin;
+    line-height: 1.5;
+    margin-bottom: 0px;
+}
+
+#team_content h1{
+    font-size: 26px;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+}
+#team_content h2{
+    font-size: 25px;
+    letter-spacing: 0;
+    color: #2ba7c1;
+    font-weight: 500;
+}
+#team_content p{
+    font-size: 10px;
+    line-height: 18px;
+}
+#team_list{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.mg_top40{
+    margin-top: 40px;
+
+}
+#team_list >div{
+  padding-right: 0px; padding-left: 0px;
+}
+#team_list >div .thumbnail{
+    border: none;
+    width: 265px;
+    text-align: left;
+    padding-right: 8%;
+}
+#team_list >div .thumbnail img{
+    width: auto;
+     margin-left: 0;
+}
+#team_list >div .thumbnail .caption{
+    padding: 0px;
+}
+#team_list >div .thumbnail .caption h3{
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #2ba7c1;
+    font-weight: 400;
+    border-bottom: 2px solid #2ba7c1;
+    padding-bottom: 5px;
+}
+#team_list >div .thumbnail .caption p{
+    font-size: 8px;
+}
+
+
+#news_list img{
+    width: auto;
+}
+#news_list .col-sm-4,#news_list .col-md-4{
+    margin-top: 5px;
+}
+.news_list img{
+    width: auto;
+}
+
+#content_us span{ color: #2ba7c1;}
+footer {
+    background: #000000;
+    padding: 20px 0;
+}
+footer p {
+    color: #ffffff;
+}
+footer .container a{
+    color: #ffffff;
+    font-size: 22px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+footer .glyphicon {
+    color: #333333;
+    font-size: 60px;
+}
+footer .glyphicon:hover {
+    color: #306d9f;
+}
+
+
+
+
+
